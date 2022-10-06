@@ -57,6 +57,11 @@ $(document).keypress(function(){
    
 })
 
+$(document).click(function () {
+   if(started===0)
+    nextSequence();
+}
+
 function checkAnswer(currentLevel)
 {   console.log(currentLevel)
     console.log("G - " + gamePattern);
